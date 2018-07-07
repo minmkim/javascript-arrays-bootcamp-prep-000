@@ -11,13 +11,13 @@ function destructivelyAddElementToBeginningOfArray(array, element) {
 }
 
 function destructivelyAddElementToEndOfArray(array, element) {
-  var newArray = destructivelyAddElementToEndOfArray(array, element)
+  array.push(element)
   return newArray
 }
 
 function addElementToEndOfArray(array, element) {
-  array.push(element)
-  return array
+  newArray = [...array, element]
+  return newArray
 }
 
 function accessElementInArray(array, element) {
